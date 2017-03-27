@@ -6,7 +6,7 @@
   margin-top: 315px;
 }
 
-a.block_right-answer{
+.block_answer-right{
   width: 70px;
   height: 30px;
   background-color: #228B22;
@@ -17,15 +17,15 @@ a.block_right-answer{
   right: 90px;
   top: 35px;
   vertical-align: middle;
-line-height: 28px; 
+line-height: 28px;
 text-decoration: none;
 }
 
-a.block_right-answer:hover{
+.block_answer-right:hover{
   background: #6B8E23;
 }
 
-a.block_false-answer{
+.block_answer-false{
   width: 70px;
   height: 30px;
   background-color: #B22222;
@@ -35,16 +35,20 @@ a.block_false-answer{
   left: 40px;
   top: 35px;
   vertical-align: middle;
-line-height: 28px; 
+line-height: 28px;
 text-decoration: none;
 color: #ffffff;
+}
+
+.block_answer-false:hover{
+  background: #6B8E23;
 }
 
 .block_question{
   font-size: 20px;
 }
 
-.circle{
+.circleList{
   width: 456px;
   height: 50px;
   position: absolute;
@@ -52,7 +56,7 @@ color: #ffffff;
   top: 400px;
 }
 
-.circle_one{
+.circle-one{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -62,13 +66,13 @@ color: #ffffff;
   top: 4px;
 }
 
-.one{
+.circle_number{
   position: relative;
   text-align: center;
   top: 10px;
 }
 
-.circle_two{
+.circle-two{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -79,13 +83,7 @@ color: #ffffff;
   left: 46px;
 }
 
-.two{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_three{
+.circle-three{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -96,13 +94,7 @@ color: #ffffff;
   left: 92px;
 }
 
-.three{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_four{
+.circle-four{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -113,13 +105,7 @@ color: #ffffff;
   left: 138px;
 }
 
-.four{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_five{
+.circle-five{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -130,13 +116,7 @@ color: #ffffff;
   left: 184px;
 }
 
-.five{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_six{
+.circle-six{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -147,13 +127,7 @@ color: #ffffff;
   left: 230px;
 }
 
-.six{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_seven{
+.circle-seven{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -164,13 +138,7 @@ color: #ffffff;
   left: 276px;
 }
 
-.seven{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_eight{
+.circle-eight{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -181,13 +149,7 @@ color: #ffffff;
   left: 321px;
 }
 
-.eight{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_nine{
+.circle-nine{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -198,13 +160,7 @@ color: #ffffff;
   left: 366px;
 }
 
-.nine{
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-
-.circle_ten{
+.circle-ten{
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -213,12 +169,6 @@ color: #ffffff;
   display: inline-block;
   top: 4px;
   left: 411px;
-}
-
-.ten{
-  position: relative;
-  text-align: center;
-  top: 10px;
 }
 
 .result{
