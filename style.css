@@ -2,27 +2,234 @@
   width: 300px;
   height: 150px;
   position: relative;
-  margin-left: 50%;
-  margin-top: 100px;
+  margin-left: 48%;
+  margin-top: 315px;
 }
 
-.block_right-answer{
+a.block_right-answer{
   width: 70px;
   height: 30px;
-  background-color: #B22222;
+  background-color: #228B22;
   text-align: center;
   color: white;
   display: inline-block;
+  position: absolute;
+  right: 90px;
+  top: 35px;
+  vertical-align: middle;
+line-height: 28px; 
+text-decoration: none;
 }
 
-.block_false-answer{
+a.block_right-answer:hover{
+  background: #6B8E23;
+}
+
+a.block_false-answer{
   width: 70px;
   height: 30px;
   background-color: #B22222;
   text-align: center;
   display: inline-block;
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  vertical-align: middle;
+line-height: 28px; 
+text-decoration: none;
+color: #ffffff;
 }
 
 .block_question{
   font-size: 20px;
+}
+
+.circle{
+  width: 456px;
+  height: 50px;
+  position: absolute;
+  left: 43%;
+  top: 400px;
+}
+
+.circle_one{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+}
+
+.one{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_two{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 46px;
+}
+
+.two{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_three{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 92px;
+}
+
+.three{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_four{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 138px;
+}
+
+.four{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_five{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 184px;
+}
+
+.five{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_six{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 230px;
+}
+
+.six{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_seven{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 276px;
+}
+
+.seven{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_eight{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 321px;
+}
+
+.eight{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_nine{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 366px;
+}
+
+.nine{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.circle_ten{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: solid 1px #A9A9A9;
+  display: inline-block;
+  top: 4px;
+  left: 411px;
+}
+
+.ten{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.result{
+  position: absolute;
+  top: 40%;
+  left: 49%;
+}
+
+.result_block{
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  font-size: 50px;
 }
