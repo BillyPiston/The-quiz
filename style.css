@@ -137,3 +137,9 @@
   left: 49%;
   font-size: 50px;
 }
+
+.quiz_counter{
+  position: relative;
+  left: 46%;
+  top: 10px;
+}

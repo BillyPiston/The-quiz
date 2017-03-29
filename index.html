@@ -60,5 +60,17 @@
 
 </div>
 
+<input class="quiz_counter" type="number" value="0">
+
+<script>
+let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
+let rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
+let counter = document.getElementsByClassName('quiz_counter')[0];
+
+falseBtn.addEventListener("click", () => {counter.value = counter.value--});
+rightBtn.addEventListener("click", () => {counter.value = counter.value++});
+
+</script>
+
 </body>
 </html>
