@@ -64,8 +64,8 @@
 
 <script>
 let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
-let rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
-let counter = document.getElementsByClassName('quiz_counter')[0];
+		rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
+		counter = document.getElementsByClassName('quiz_counter')[0];
 
 falseBtn.addEventListener("click", () => {counter.value = counter.value--});
 rightBtn.addEventListener("click", () => {counter.value = counter.value++});
