@@ -64,11 +64,19 @@
 
 <script>
 let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
-		rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
-		counter = document.getElementsByClassName('quiz_counter')[0];
+	rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
+	counter = document.getElementsByClassName('quiz_counter')[0];
 
-falseBtn.addEventListener("click", () => {counter.value = counter.value--});
-rightBtn.addEventListener("click", () => {counter.value = counter.value++});
+falseBtn.addEventListener("click", counterReduce);
+rightBtn.addEventListener("click", counterAdd);
+
+function counterAdd () {
+	counter.value++
+}
+
+function counterReduce () {
+	counter.value--
+}
 
 </script>
 
