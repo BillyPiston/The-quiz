@@ -1,10 +1,9 @@
 let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
-   rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
-   counter = document.getElementsByClassName('quiz_counter')[0];
-  
- falseBtn.addEventListener("click", counterReduce);
- rightBtn.addEventListener("click", counterAdd);
+rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
+const counter = document.getElementsByClassName('quiz_counter')[0];
 
+falseBtn.addEventListener("click", counterReduce);
+rightBtn.addEventListener("click", counterAdd);
 
 const questionList = [
     {
@@ -39,7 +38,7 @@ const questionList = [
     },
 ]
 
-const counter = document.getElementsByClassName('quiz_counter')[0];
+counter = document.getElementsByClassName('quiz_counter')[0];
 
 init()
 
@@ -56,40 +55,42 @@ function init () {
         $questionText    = document.getElementsByClassName('quiz_question')[0],
         $quiz_answerList = document.getElementsByClassName('quiz_answerList')[0]
 
-    $questionText.innerHTML = question.text
+				$questionText.innerHTML    = question.text
     $quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
-    setBtnListeners()
-  }
 
-  function generateAnswerListHtml (answerList) {
-  let answers = ''
 
-  answerList.forEach(
-    answer => {
-      if (answer.isCorrect) {
-        answers += `<button class="quiz_answer quiz_answer-right">${answer.text}</button>`
-      } else {
-        answers += `<button class="quiz_answer quiz_answer-false">${answer.text}</button>`
-      }
-    }
-  )
-  
-  return answers
+				setBtnListeners()
+
+    $questionText.innerHTML = question.text
+
+		function generateAnswerListHtml (answerList) {
+		let answers = ''
+
+		answerList.forEach(
+			answer => {
+				if (answer.isCorrect) {
+					answers += `<button class="quiz_answer quiz_answer-right">${answer.text}</button>`
+				} else {
+					answers += `<button class="quiz_answer quiz_answer-false">${answer.text}</button>`
+				}
+			}
+		)
+
+		return answers
+	}
+
+ $quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
+
+ function setBtnListeners () {
+	 const $falseBtn = document.getElementsByClassName('quiz_answer-false'),
+				 $rightBtn = document.getElementsByClassName('quiz_answer-right')
+
+	 for (let i = 0; i < $falseBtn.length; i++) {
+			 $falseBtn[i].addEventListener('click', counterReduce);
+	 }
+
+	 for (let i = 0; i < $rightBtn.length; i++) {
+			 $rightBtn[i].addEventListener('click', counterAdd);
+	 }
 }
-
-  $quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
-
-
-function setBtnListeners () {
-  const $falseBtn = document.getElementsByClassName('quiz_answer-false'),
-        $rightBtn = document.getElementsByClassName('quiz_answer-right')
-
-  for (let i = 0; i < $falseBtn.length; i++) {
-    $falseBtn[i].addEventListener('click', counterReduce);
-  }
-
-  for (let i = 0; i < $rightBtn.length; i++) {
-    $rightBtn[i].addEventListener('click', counterAdd);
-  }
-
 }
