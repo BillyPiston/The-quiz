@@ -1,6 +1,6 @@
 let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
 rightBtn = document.getElementsByClassName('quiz_answer-right')[0];
-const counter = document.getElementsByClassName('quiz_counter')[0];
+
 
 falseBtn.addEventListener("click", counterReduce);
 rightBtn.addEventListener("click", counterAdd);
@@ -38,7 +38,7 @@ const questionList = [
     },
 ]
 
-
+const counter = document.getElementsByClassName('quiz_counter')[0];
 
 init()
 
@@ -56,8 +56,8 @@ function init () {
         $quiz_answerList = document.getElementsByClassName('quiz_answerList')[0]
 
 				$questionText.innerHTML    = question.text
-    $quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
-
+    
+$quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
 
 				setBtnListeners()
 
@@ -79,7 +79,7 @@ function init () {
 		return answers
 	}
 
- $quiz_answerList.innerHTML = generateAnswerListHtml(question.answerList)
+
 
  function setBtnListeners () {
 	 const $falseBtn = document.getElementsByClassName('quiz_answer-false'),
