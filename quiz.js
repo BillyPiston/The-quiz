@@ -1,5 +1,5 @@
 let falseBtn = document.getElementsByClassName('quiz_answer-false')[0],
-rightBtn = document.getElementsByClassName('quiz_answer-right')[0],
+rightBtn = document.getElementsByClassName('quiz_answer-right')[0];
 const counter = document.getElementsByClassName('quiz_counter')[0];
 
 falseBtn.addEventListener("click", counterReduce);
@@ -38,7 +38,7 @@ const questionList = [
     },
 ]
 
-counter = document.getElementsByClassName('quiz_counter')[0];
+
 
 init()
 
